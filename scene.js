@@ -1,46 +1,65 @@
-const scene = new THREE.Scene()
+const scene = new THREE.Scene();
 
 const camera = new THREE.PerspectiveCamera(
 75,
 window.innerWidth / window.innerHeight,
 0.1,
 1000
-)
+);
 
-const renderer = new THREE.WebGLRenderer({
-alpha: true
-})
+const renderer = new THREE.WebGLRenderer({ alpha: true });
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.body.appendChild(renderer.domElement);
 
-renderer.setSize(window.innerWidth, window.innerHeight)
-renderer.domElement.style.position = "fixed"
-renderer.domElement.style.top = "0"
-renderer.domElement.style.left = "0"
-renderer.domElement.style.zIndex = "-1"
+camera.position.z = 5;
 
-document.body.appendChild(renderer.domElement)
+const particlesCount = 2000;
 
-const geometry = new THREE.IcosahedronGeometry(2,1)
+const positions = new Float32Array(particlesCount * 3);
 
-const material = new THREE.MeshBasicMaterial({
-color:0x8b7aff,
-wireframe:true
-})
-
-const mesh = new THREE.Mesh(geometry,material)
-
-scene.add(mesh)
-
-camera.position.z = 5
-
-function animate(){
-
-requestAnimationFrame(animate)
-
-mesh.rotation.x += 0.002
-mesh.rotation.y += 0.003
-
-renderer.render(scene,camera)
-
+for(let i = 0; i < particlesCount * 3; i++){
+positions[i] = (Math.random() - 0.5) * 20;
 }
 
-animate()
+const geometry = new THREE.BufferGeometry();
+geometry.setAttribute(
+'position',
+new THREE.BufferAttribute(positions, 3)
+);
+
+const material = new THREE.PointsMaterial({
+size: 0.03,
+color: 0x7b5cff
+});
+
+const particles = new THREE.Points(geometry, material);
+
+scene.add(particles);
+
+let mouseX = 0;
+let mouseY = 0;
+
+document.addEventListener("mousemove",(event)=>{
+mouseX = (event.clientX / window.innerWidth - 0.5);
+mouseY = (event.clientY / window.innerHeight - 0.5);
+});
+
+function animate(){
+requestAnimationFrame(animate);
+
+particles.rotation.y += 0.0008;
+particles.rotation.x += 0.0003;
+
+particles.rotation.y += mouseX * 0.002;
+particles.rotation.x += mouseY * 0.002;
+
+renderer.render(scene, camera);
+}
+
+animate();
+
+window.addEventListener("resize", () => {
+camera.aspect = window.innerWidth / window.innerHeight;
+camera.updateProjectionMatrix();
+renderer.setSize(window.innerWidth, window.innerHeight);
+});
