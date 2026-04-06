@@ -138,4 +138,31 @@ opacity:0.95;
 filter:drop-shadow(0 0 30px rgba(139,122,255,0.7));
 }
 
+@keyframes floatLogo {
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-12px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+.logo-main{
+width:420px;
+max-width:80%;
+margin-bottom:35px;
+
+opacity:0.95;
+
+filter:drop-shadow(0 0 30px rgba(139,122,255,0.8));
+
+animation:floatLogo 6s ease-in-out infinite;
+}
 
