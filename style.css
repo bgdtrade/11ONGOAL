@@ -104,21 +104,25 @@ margin-bottom:40px;
 
 .hero-buttons{
 display:flex;
-gap:20px;
+gap:12px;
 justify-content:center;
-flex-wrap:wrap;
+flex-wrap:nowrap;
+overflow-x:auto;
+padding:0 10px;
 }
 
 .hero-btn{
-
-padding:14px 30px;
+padding:12px 20px;
 background:#8b7aff;
 border-radius:10px;
 text-decoration:none;
 color:white;
 font-size:14px;
-letter-spacing:1px;
-transition:all 0.3s ease;
+white-space:nowrap;
+}
+
+.hero-buttons::-webkit-scrollbar{
+display:none;
 }
 
 .hero-btn:hover{
