@@ -39,9 +39,20 @@ scene.add(particles);
 let mouseX = 0;
 let mouseY = 0;
 
+function updateMouse(x, y){
+mouseX = (x / window.innerWidth - 0.5);
+mouseY = (y / window.innerHeight - 0.5);
+}
+
 document.addEventListener("mousemove",(event)=>{
-mouseX = (event.clientX / window.innerWidth - 0.5);
-mouseY = (event.clientY / window.innerHeight - 0.5);
+updateMouse(event.clientX, event.clientY);
+});
+
+document.addEventListener("touchmove",(event)=>{
+updateMouse(
+event.touches[0].clientX,
+event.touches[0].clientY
+);
 });
 
 function animate(){
