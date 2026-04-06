@@ -169,3 +169,12 @@ filter:drop-shadow(0 0 30px rgba(139,122,255,0.8));
 animation:floatLogo 6s ease-in-out infinite;
 }
 
+.site-credit{
+position:absolute;
+bottom:40px;
+text-align:center;
+font-size:12px;
+letter-spacing:3px;
+color:rgba(255,255,255,0.35);
+line-height:1.8;
+}
