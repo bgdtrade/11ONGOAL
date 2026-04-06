@@ -107,3 +107,10 @@ text-decoration:none;
 color:white;
 font-size:16px;
 }
+
+.logo-main{
+width:380px;
+max-width:60%;
+margin-bottom:30px;
+opacity:0.95;
+}
