@@ -39,13 +39,22 @@ scene.add(particles);
 let mouseX = 0;
 let mouseY = 0;
 
-function updateMouse(x, y){
+function updateMouse(x,y){
 mouseX = (x / window.innerWidth - 0.5);
 mouseY = (y / window.innerHeight - 0.5);
 }
 
+// Desktop
 document.addEventListener("mousemove",(event)=>{
-updateMouse(event.clientX, event.clientY);
+updateMouse(event.clientX,event.clientY);
+});
+
+// Telefon
+document.addEventListener("touchstart",(event)=>{
+updateMouse(
+event.touches[0].clientX,
+event.touches[0].clientY
+);
 });
 
 document.addEventListener("touchmove",(event)=>{
