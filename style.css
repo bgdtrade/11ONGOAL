@@ -7,18 +7,20 @@ color:white;
 
 .header{
 display:flex;
-justify-content:space-between;
 align-items:center;
-padding:20px 60px;
+justify-content:space-between;
+padding:20px 40px;
 position:fixed;
-width:100%;
 top:0;
-background:rgba(0,0,0,0.7);
-backdrop-filter: blur(10px);
+left:0;
+width:100%;
+box-sizing:border-box;
+background:rgba(0,0,0,0.8);
+backdrop-filter:blur(10px);
 }
 
 .logo{
-font-size:28px;
+font-size:26px;
 font-weight:700;
 letter-spacing:4px;
 }
@@ -27,10 +29,15 @@ letter-spacing:4px;
 color:#8b7aff;
 }
 
+.nav{
+display:flex;
+gap:35px;
+}
+
 .nav a{
-margin:0 20px;
 text-decoration:none;
 color:white;
+font-size:15px;
 transition:0.3s;
 }
 
@@ -44,4 +51,5 @@ background:#8b7aff;
 border-radius:8px;
 text-decoration:none;
 color:white;
+font-size:14px;
 }
