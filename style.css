@@ -113,14 +113,14 @@ padding:0 10px;
 }
 
 .hero-btn{
-padding:14px 40px;
+padding:16px 50px;
 background:#8b7aff;
 border:none;
-border-radius:10px;
+border-radius:12px;
 text-decoration:none;
 color:white;
-font-size:15px;
-letter-spacing:2px;
+font-size:clamp(14px, 1.2vw, 18px);
+letter-spacing:3px;
 transition:transform 0.25s ease, background 0.25s ease;
 }
 
@@ -158,14 +158,10 @@ transform:translateY(0px);
 }
 
 .logo-main{
-width:420px;
-max-width:80%;
-margin-bottom:35px;
-
+width:clamp(300px, 35vw, 650px);
+margin-bottom:50px;
 opacity:0.95;
-
 filter:drop-shadow(0 0 30px rgba(139,122,255,0.8));
-
 animation:floatLogo 6s ease-in-out infinite;
 }
 
