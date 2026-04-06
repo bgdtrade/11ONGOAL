@@ -133,6 +133,10 @@ transform:translateY(-2px);
 background:#7768e6;
 }
 
+.hero-buttons{
+margin-top:20px;
+}
+
 .logo-main{
 width:450px;
 max-width:80%;
