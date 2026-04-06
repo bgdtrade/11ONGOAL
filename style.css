@@ -1,0 +1,47 @@
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#0b0b0b;
+color:white;
+}
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+position:fixed;
+width:100%;
+top:0;
+background:rgba(0,0,0,0.7);
+backdrop-filter: blur(10px);
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+letter-spacing:4px;
+}
+
+.logo span{
+color:#8b7aff;
+}
+
+.nav a{
+margin:0 20px;
+text-decoration:none;
+color:white;
+transition:0.3s;
+}
+
+.nav a:hover{
+color:#8b7aff;
+}
+
+.cta{
+padding:10px 20px;
+background:#8b7aff;
+border-radius:8px;
+text-decoration:none;
+color:white;
+}
