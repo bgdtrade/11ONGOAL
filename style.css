@@ -113,13 +113,15 @@ padding:0 10px;
 }
 
 .hero-btn{
-padding:12px 20px;
+padding:14px 40px;
 background:#8b7aff;
+border:none;
 border-radius:10px;
 text-decoration:none;
 color:white;
-font-size:14px;
-white-space:nowrap;
+font-size:15px;
+letter-spacing:2px;
+transition:transform 0.25s ease, background 0.25s ease;
 }
 
 .hero-buttons::-webkit-scrollbar{
@@ -127,8 +129,8 @@ display:none;
 }
 
 .hero-btn:hover{
-transform:translateY(-3px);
-box-shadow:0 0 20px #8b7aff;
+transform:translateY(-2px);
+background:#7768e6;
 }
 
 .logo-main{
