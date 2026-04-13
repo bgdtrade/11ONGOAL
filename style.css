@@ -223,10 +223,15 @@ display:none;
 
 .hamburger{
 display:flex;
+}
+
+.hamburger{
+display:none;
 flex-direction:column;
 gap:6px;
 cursor:pointer;
-transition:0.3s;
+z-index:2000;
+position:relative;
 }
 
 .hamburger span{
@@ -252,7 +257,12 @@ transform:rotate(-45deg) translate(6px,-6px);
 }
   
 .header-container{
-padding:15px 25px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+position:relative;
+z-index:1500;
 }
 
 /* HERO */
