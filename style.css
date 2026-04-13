@@ -217,6 +217,20 @@ display:none;
 display:flex;
 }
 
+.hamburger{
+flex-direction:column;
+gap:6px;
+cursor:pointer;
+}
+
+.hamburger span{
+width:26px;
+height:3px;
+background:white;
+border-radius:3px;
+display:block;
+}
+
 .header-container{
 padding:15px 25px;
 }
