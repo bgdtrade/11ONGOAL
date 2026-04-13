@@ -11,17 +11,6 @@ color:white;
 .hero{
 position:relative;
 z-index:2;
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-}
-
-.hero{
-position:relative;
-z-index:2;
 min-height:100vh;
 display:flex;
 flex-direction:column;
@@ -98,7 +87,7 @@ line-height:1.6;
 z-index:5;
 }
 
-/* CANVAS BACKGROUND */
+/* CANVAS */
 
 canvas{
 position:fixed;
@@ -126,14 +115,14 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:20px 60px;
+position:relative;
 }
 
 .header-logo{
 width:140px;
-filter:drop-shadow(0 0 15px rgba(139,122,255,0.7));
 }
 
-/* NAV */
+/* DESKTOP MENU */
 
 .nav-menu{
 display:flex;
@@ -146,7 +135,6 @@ text-decoration:none;
 color:white;
 font-size:14px;
 letter-spacing:2px;
-transition:0.3s;
 }
 
 .nav-menu a:hover{
@@ -166,70 +154,6 @@ display:none;
 flex-direction:column;
 gap:6px;
 cursor:pointer;
-z-index:200;
-}
-
-.hamburger span{
-width:28px;
-height:3px;
-background:white;
-border-radius:3px;
-display:block;
-}
-
-/* MOBILE MENU */
-
-.mobile-menu{
-position:absolute;
-top:70px;
-right:20px;
-width:220px;
-background:rgba(0,0,0,0.95);
-backdrop-filter:blur(10px);
-display:flex;
-flex-direction:column;
-align-items:flex-start;
-gap:20px;
-padding:20px;
-border-radius:12px;
-transform:translateY(-20px);
-opacity:0;
-pointer-events:none;
-transition:0.3s;
-}
-
-
-.mobile-menu a{
-color:white;
-text-decoration:none;
-font-size:16px;
-letter-spacing:1px;
-width:100%;
-}
-
-.mobile-menu.active{
-transform:translateY(0);
-opacity:1;
-pointer-events:auto;
-}
-
-/* RESPONSIVE */
-
-@media (max-width:768px){
-
-.nav-menu{
-display:none;
-}
-
-/* HAMBURGER APARE PE TELEFON */
-
-.hamburger{
-display:flex;
-flex-direction:column;
-gap:6px;
-cursor:pointer;
-z-index:2000;
-position:relative;
 }
 
 .hamburger span{
@@ -240,7 +164,7 @@ border-radius:3px;
 transition:0.3s;
 }
 
-/* ANIMATIE X */
+/* HAMBURGER ANIMATION */
 
 .hamburger.active span:nth-child(1){
 transform:rotate(45deg) translate(5px,5px);
@@ -254,12 +178,52 @@ opacity:0;
 transform:rotate(-45deg) translate(6px,-6px);
 }
 
-/* HEADER */
+/* MOBILE MENU */
+
+.mobile-menu{
+position:fixed;
+top:70px;
+right:20px;
+width:220px;
+background:rgba(0,0,0,0.95);
+backdrop-filter:blur(10px);
+display:flex;
+flex-direction:column;
+gap:20px;
+padding:20px;
+border-radius:12px;
+opacity:0;
+pointer-events:none;
+transform:translateY(-10px);
+transition:0.3s;
+}
+
+.mobile-menu a{
+color:white;
+text-decoration:none;
+font-size:16px;
+}
+
+.mobile-menu.active{
+opacity:1;
+pointer-events:auto;
+transform:translateY(0);
+}
+
+/* RESPONSIVE */
+
+@media (max-width:768px){
+
+.nav-menu{
+display:none;
+}
+
+.hamburger{
+display:flex;
+}
 
 .header-container{
 padding:15px 25px;
-position:relative;
-z-index:1500;
 }
 
 /* HERO */
@@ -283,7 +247,7 @@ width:260px;
 margin-bottom:25px;
 }
 
-/* BUTON ENTER */
+/* ENTER BUTTON */
 
 .hero-btn{
 padding:12px 35px;
