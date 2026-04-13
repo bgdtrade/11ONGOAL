@@ -221,12 +221,10 @@ pointer-events:auto;
 display:none;
 }
 
-.hamburger{
-display:flex;
-}
+/* HAMBURGER APARE PE TELEFON */
 
 .hamburger{
-display:none;
+display:flex;
 flex-direction:column;
 gap:6px;
 cursor:pointer;
@@ -255,12 +253,11 @@ opacity:0;
 .hamburger.active span:nth-child(3){
 transform:rotate(-45deg) translate(6px,-6px);
 }
-  
+
+/* HEADER */
+
 .header-container{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 60px;
+padding:15px 25px;
 position:relative;
 z-index:1500;
 }
@@ -274,8 +271,6 @@ justify-content:center;
 align-items:center;
 padding-top:0;
 }
-
-/* POZITIE */
 
 .hero-content{
 transform:translateY(-110px);
@@ -304,6 +299,8 @@ font-size:11px;
 letter-spacing:1.5px;
 padding:0 20px;
 text-align:center;
+}
+
 }
 
 }
