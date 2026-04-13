@@ -142,6 +142,24 @@ width:110px;
 
 .logo-main{
 width:clamp(280px,35vw,600px);
+animation:floatLogo 6s ease-in-out infinite;
+filter:drop-shadow(0 0 30px rgba(139,122,255,0.8));
+}
+
+@keyframes floatLogo {
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-15px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
 }
 
 /* DESKTOP MENU */
