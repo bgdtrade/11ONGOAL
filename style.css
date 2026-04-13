@@ -240,3 +240,29 @@ padding:10px 20px;
 background:#8b7aff;
 border-radius:8px;
 }
+
+@media (max-width:768px){
+
+.header-container{
+padding:15px 20px;
+}
+
+.header-logo{
+width:90px;
+}
+
+.nav-menu{
+gap:18px;
+}
+
+.nav-menu a{
+font-size:12px;
+letter-spacing:1px;
+}
+
+.contact-btn{
+padding:6px 12px;
+font-size:12px;
+}
+
+}
