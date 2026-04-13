@@ -3,6 +3,7 @@ margin:0;
 background:black;
 font-family:'Orbitron', sans-serif;
 color:white;
+overflow-x:hidden;
 }
 
 canvas{
