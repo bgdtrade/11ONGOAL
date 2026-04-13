@@ -298,8 +298,9 @@ z-index:200;
 .hamburger span{
 width:28px;
 height:3px;
-background:#ffffff;
+background:white;
 border-radius:3px;
+display:block;
 }
 
 /* MOBILE MENU */
@@ -351,7 +352,8 @@ padding-top:120px;
 }
 
 .logo-main{
-width:260px;
+width:180px;
+margin-bottom:30px;
 }
 
 }
