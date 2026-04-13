@@ -234,7 +234,7 @@ padding-top:0;
 /* POZITIE */
 
 .hero-content{
-margin-top:40px;
+transform:translateY(-120px);
 }
 
 /* LOGO */
