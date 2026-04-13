@@ -249,16 +249,9 @@ font-size:38px;
 font-size:14px;
 }
 
-.hero-btn{
-padding:12px 30px;
-font-size:14px;
-}
+/* HERO CENTER */
 
-.mobile-menu{
-top:60px;
-}
-
-  .hero{
+.hero{
 padding-top:0;
 height:100vh;
 display:flex;
@@ -266,18 +259,41 @@ justify-content:center;
 align-items:center;
 }
 
-  .hero-content{
+.hero-content{
 transform:none;
 margin-top:0;
+display:flex;
+flex-direction:column;
+align-items:center;
 }
 
-  .logo-main{
+/* LOGO */
+
+.logo-main{
 width:260px;
-margin-bottom:30px;
+margin-bottom:25px;
 }
 
-  .hero-buttons{
+/* BUTTON CENTER */
+
+.hero-buttons{
+display:flex;
 justify-content:center;
+align-items:center;
+width:100%;
+margin-top:10px;
+}
+
+.hero-btn{
+padding:12px 30px;
+font-size:14px;
+margin:auto;
+}
+
+/* MOBILE MENU */
+
+.mobile-menu{
+top:60px;
 }
 
 }
