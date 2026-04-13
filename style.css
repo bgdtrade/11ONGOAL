@@ -221,8 +221,20 @@ display:flex;
 padding:15px 25px;
 }
 
+/* FIX POZITIE LOGO */
+
 .hero{
-padding-top:120px;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding-top:0;
+}
+
+/* RIDICAM CONTINUTUL PUTIN */
+
+.hero-content{
+margin-top:40px;
 }
 
 .logo-main{
