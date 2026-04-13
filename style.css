@@ -290,15 +290,16 @@ border-radius:8px;
 .hamburger{
 display:none;
 flex-direction:column;
-gap:5px;
+gap:6px;
 cursor:pointer;
+z-index:200;
 }
 
 .hamburger span{
-width:25px;
+width:28px;
 height:3px;
-background:white;
-display:block;
+background:#ffffff;
+border-radius:3px;
 }
 
 /* MOBILE MENU */
