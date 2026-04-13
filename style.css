@@ -114,20 +114,22 @@ z-index:1000;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:10px 60px;
+padding:6px 40px;
 position:relative;
+height:60px;
 }
 
 .header-logo{
-width:110px;
+width:90px;
 }
 
 /* DESKTOP MENU */
 
 .nav-menu{
 display:flex;
-gap:40px;
+gap:35px;
 align-items:center;
+height:60px;
 }
 
 .nav-menu a{
@@ -223,7 +225,8 @@ display:flex;
 }
 
 .header-container{
-padding:8px 20px;
+padding:5px 20px;
+height:55px;
 }
 
 /* HERO */
@@ -243,7 +246,7 @@ transform:translateY(-110px);
 /* LOGO */
 
 .logo-main{
-width:260px;
+width:80px;
 margin-bottom:25px;
 }
 
