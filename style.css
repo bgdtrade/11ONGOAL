@@ -79,6 +79,14 @@ opacity:0.85;
 margin-bottom:32px;
 }
 
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
 /* BUTTON */
 
 .hero-btn{
@@ -92,6 +100,7 @@ font-size:16px;
 letter-spacing:3px;
 transition:0.25s;
 box-shadow:0 0 15px rgba(139,122,255,0.6);
+margin-top:40px;
 }
 
 .hero-btn:hover{
@@ -124,6 +133,10 @@ padding:0 40px;
 
 .header-logo{
 width:110px;
+}
+
+.logo-main{
+width:clamp(280px,35vw,600px);
 }
 
 /* DESKTOP MENU */
