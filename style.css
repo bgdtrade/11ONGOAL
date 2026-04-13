@@ -6,6 +6,11 @@ color:white;
 overflow-x:hidden;
 }
 
+html, body{
+height:100%;
+overflow:hidden;
+}
+
 /* BACKGROUND CANVAS */
 
 canvas{
