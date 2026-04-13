@@ -26,14 +26,36 @@
 <a href="#gaming">Gaming</a>
 <a href="#webdev">Web Development</a>
 <a href="#fashion">Fashion</a>
-
 <a href="#contact" class="contact-btn">Contact</a>
 
 </nav>
+  <div class="hamburger" id="hamburger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+</div>
+
+<div class="mobile-menu" id="mobileMenu">
+<a href="#music">Music</a>
+<a href="#gaming">Gaming</a>
+<a href="#webdev">Web Development</a>
+<a href="#fashion">Fashion</a>
+<a href="#contact">Contact</a>
 
 </div>
 
 </header>
+<script>
 
+const hamburger = document.getElementById("hamburger");
+const mobileMenu = document.getElementById("mobileMenu");
+
+hamburger.addEventListener("click", () => {
+mobileMenu.classList.toggle("active");
+});
+
+</script>
 </body>
 </html>
