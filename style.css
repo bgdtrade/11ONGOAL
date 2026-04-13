@@ -221,20 +221,20 @@ display:flex;
 padding:15px 25px;
 }
 
-/* FIX POZITIE LOGO */
+/* FIX POZITIE HERO */
 
 .hero{
 height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-padding-top:0;
+padding-top:0 !important;
 }
 
-/* RIDICAM CONTINUTUL PUTIN */
+/* COBORAM LOGO */
 
 .hero-content{
-margin-top:40px;
+margin-top:80px !important;
 }
 
 .logo-main{
